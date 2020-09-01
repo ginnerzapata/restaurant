@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+#content {
+  width: 100vw;
+  height: 100vh;
+  background: url("img/restaurant-front.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  background: #f2f2f2;
+  height: 100%;
+  max-height: calc(100% - 188px);
+  overflow: scroll;
+}
+/* menu */
+
+nav {
+  display: flex;
+  height: 94px;
+  border-bottom: 2px solid #c59d5f;
+}
+
+ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  margin: 0 20px;
+  color: white;
+  text-transform: uppercase;
+}
+li:hover {
+  border-bottom: 2px solid #c59d5f;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+
+/*main*/
+
+.menu-item {
+  max-width: 600px;
+  margin-bottom: 40px;
+  margin-left: calc(50vw - 300px);
+}
+
+/* footer */
+
+footer {
+  height: 94px;
+  border-top: 2px solid #c59d5f;
+  display: flex;
+}
+footer p {
+  margin: auto;
+}
+/*Typography*/
+
+.cursive {
+  font-family: "Herr Von Muellerhoff", cursive;
+  font-size: 96px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: bold;
+  margin-top: -72px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+p {
+  line-height: 150%;
+}
+hr {
+  width: 280px;
+  border: 2px solid #c59d5f;
+  margin: 24px auto;
+}
+.menu-hr {
+  border: 1px solid #c59d5f;
+}
+
+button {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 16px;
+  background: #c59d5f;
+  border: none;
+  margin: 0 auto;
+  margin-top: 40px;
+  cursor: pointer;
+}
+button:hover {
+  color: white;
+}
+.white {
+  color: white;
+}
+
+.golden {
+  color: #c59d5f;
+}
+
+.gray {
+  color: #262626;
+}
+
+main::-webkit-scrollbar {
+  width: 1em;
+}
+
+/* body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+} */
+
+main::-webkit-scrollbar-thumb {
+  background-color: #c59d5f;
+  outline: 1px solid white;
+}
